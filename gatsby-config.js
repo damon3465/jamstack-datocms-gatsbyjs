@@ -37,5 +37,18 @@ module.exports = {
       resolve: "gatsby-source-contentful",
       options: contentfulConfig,
     },
+    "gatsby-plugin-offline",
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `GatsbyJS My Blog`,
+        short_name: `MY BLOG`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+      },
+    },
   ],
 };
